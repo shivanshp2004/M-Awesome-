@@ -28,10 +28,10 @@ const Card = () => {
       setImage(json.current.condition.icon)
       setCloud(json.current.cloud)
       setWind(json.current.wind_kph)
+      if(cloud<10) setCloud(cloud=>cloud-10)
       console.log(json)
     }
     findTemp()
-    if(cloud<10) cloud=10
   return (
     <div className='w-full h-[70%] flex justify-center items-center mt-[20px] flex-col'>
         <p className='text-[2.5rem] font-bold ml-[10px] mb-[20px] '>{city}, {region}</p>
