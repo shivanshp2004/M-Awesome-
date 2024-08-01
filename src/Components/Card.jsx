@@ -34,32 +34,32 @@ const Card = () => {
   findTemp();
   return (
     <div className="w-full h-[70%] flex justify-center items-center mt-[20px] flex-col max-sm:mt-[60px] max-sm:h-[65%]">
-      <p className="text-[2.5rem] font-bold ml-[10px] mb-[20px] max-sm:ml-[40px]">
+      <p className="text-[2.5rem] font-bold ml-[10px] mb-[20px] max-sm:ml-[45px] max-sm:text-[2rem]">
         {city}, {region}
       </p>
-      <div className="w-[450px] h-[550px] bg-[#ef233c] shadow-[0px_0px_5px_8px_rgba(0,0,0,0.15)] max-sm:w-[370px] max-sm:h-[395px] rounded-3xl">
+      <div className="w-[450px] h-[550px] bg-[#ef233c] shadow-[0px_0px_5px_8px_rgba(0,0,0,0.15)] max-sm:w-[330px] max-sm:h-[360px] rounded-3xl">
         <div className="flex w-[450px] h-[80px] items-center justify-between max-sm:w-[398px] ">
           <div className="w-[110px] mt-[50px] bg-purple-100 h-[100px] ml-[20px] flex items-center justify-center pd-2 rounded-full p-2 max-sm:w-[110px]">
             <img src={image} className="w-[100px] mb-[-3px] max-sm:w-[100px]" />
           </div>
-          <p className="text-[2.0rem] font-bold mt-[40px] mr-[55px] max-sm:mr-[0px] max-sm:ml-[30px] ml-[30px]">
+          <p className="text-[2.0rem] font-bold mt-[40px] mr-[55px] max-sm:mr-[75px] ml-[30px]" >
             {tempType}
           </p>
         </div>
         <div className="ml-[10px]">
-          <p className="text-[1.6rem] font-medium ml-[10px] mt-[75px] ">
+          <p className="text-[1.6rem] font-medium ml-[10px] mt-[75px] max-sm:mt-[50px] max-sm:text-[1.4rem]">
             Temperature : {temp}°C / {temp_f}°F
           </p>
-          <p className="text-[1.6rem] font-medium ml-[10px] mt-[10px] ">
+          <p className="text-[1.6rem] font-medium ml-[10px] mt-[10px] max-sm:text-[1.4rem]">
             Feels like : {feelsLike}°C / {feelsLike_f}°F
           </p>
-          <p className="text-[1.6rem] font-medium ml-[10px] mt-[10px] ">
+          <p className="text-[1.6rem] font-medium ml-[10px] mt-[10px] max-sm:text-[1.4rem] ">
             Humidity : {humidity}
           </p>
-          <p className="text-[1.6rem] font-medium ml-[10px] mt-[10px] ">
+          <p className="text-[1.6rem] font-medium ml-[10px] mt-[10px] max-sm:text-[1.4rem]">
             Wind Speed : {wind}kph
           </p>
-          <p className="text-[1.6rem] font-medium ml-[10px] mt-[10px] ">
+          <p className="text-[1.6rem] font-medium ml-[10px] mt-[10px] max-sm:text-[1.4rem]">
             Rain Probability : {cloud - 10}%
           </p>
         </div>
